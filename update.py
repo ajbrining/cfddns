@@ -6,8 +6,10 @@ from miniupnpc import UPnP
 with open('config.yaml') as f:
     config = load(f, Loader=FullLoader)
 
+# use UPnP to get the external IP address
 upnp = UPnP()
 
+upnp.discoverdelay = 200
 upnp.discover()
 upnp.selectigd()
 ip = upnp.externalipaddress()
