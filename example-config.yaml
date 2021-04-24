@@ -1,0 +1,4 @@
+api_token: '**CLOUDFLARE API TOKEN GOES HERE**'
+
+zone_id: '**DOMAIN ZONE ID GOES HERE**'
+hostname: 'example.com'
